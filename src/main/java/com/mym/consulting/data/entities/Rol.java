@@ -1,13 +1,13 @@
-package com.mym.consulting.entities;
+package com.mym.consulting.data.entities;
 
 import lombok.Data;
 import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="equipos")
-@NamedQuery(name="Equipo.findAll", query="SELECT e FROM Equipo e")
-public class Equipo {
+@Table(name="roles")
+@NamedQuery(name="Role.findAll", query="SELECT r FROM Role r")
+public class Rol {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;

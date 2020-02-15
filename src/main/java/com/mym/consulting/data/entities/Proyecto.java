@@ -1,4 +1,4 @@
-package com.mym.consulting.entities;
+package com.mym.consulting.data.entities;
 
 import lombok.Data;
 import javax.persistence.*;
