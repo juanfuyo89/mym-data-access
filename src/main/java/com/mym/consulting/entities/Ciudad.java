@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name="ciudades")
-@NamedQuery(name="Ciudade.findAll", query="SELECT c FROM Ciudade c")
+@NamedQuery(name="Ciudad.findAll", query="SELECT c FROM Ciudad c")
 public class Ciudad {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

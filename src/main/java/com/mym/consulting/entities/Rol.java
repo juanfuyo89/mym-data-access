@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name="roles")
-@NamedQuery(name="Role.findAll", query="SELECT r FROM Role r")
+@NamedQuery(name="Rol.findAll", query="SELECT r FROM Rol r")
 public class Rol {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="usuarios")
+@Table(name="usuarios",schema="mym_common")
 @NamedQuery(name="Usuario.findAll", query="SELECT u FROM Usuario u")
 public class Usuario {
     @Id
@@ -19,5 +19,6 @@ public class Usuario {
 
     private String token;
 
-    private String username;
+    @Column(name="username")
+    private String userName;
 }

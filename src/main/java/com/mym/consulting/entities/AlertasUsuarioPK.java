@@ -2,10 +2,11 @@ package com.mym.consulting.entities;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @Embeddable
-public class AlertasUsuarioPK {
+public class AlertasUsuarioPK implements Serializable {
     @Column(name="id_alerta")
     private Integer idAlerta;
 

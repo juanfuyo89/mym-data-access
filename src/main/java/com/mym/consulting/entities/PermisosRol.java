@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name="permisos_roles")
-@NamedQuery(name="PermisosRole.findAll", query="SELECT p FROM PermisosRole p")
+@NamedQuery(name="PermisosRol.findAll", query="SELECT p FROM PermisosRol p")
 public class PermisosRol {
     @EmbeddedId
     private PermisosRolPK id;

@@ -2,9 +2,10 @@ package com.mym.consulting.entities;
 
 import lombok.Data;
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
-public class PermisosRolPK {
+public class PermisosRolPK implements Serializable {
     @Column(name="id_rol")
     private Integer idRol;
 
