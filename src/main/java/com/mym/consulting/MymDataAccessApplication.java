@@ -1,4 +1,4 @@
-package com.mym.consulting.data;
+package com.mym.consulting;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

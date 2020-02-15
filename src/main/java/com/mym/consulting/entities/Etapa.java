@@ -1,15 +1,18 @@
-package com.mym.consulting.data.entities;
+package com.mym.consulting.entities;
 
 import lombok.Data;
 import javax.persistence.*;
+
 @Data
 @Entity
-@Table(name="ciudades")
-@NamedQuery(name="Ciudade.findAll", query="SELECT c FROM Ciudade c")
-public class Ciudad {
+@Table(name="etapas")
+@NamedQuery(name="Etapa.findAll", query="SELECT e FROM Etapa e")
+public class Etapa {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
     private String nombre;
+
+    private Integer peso;
 }
