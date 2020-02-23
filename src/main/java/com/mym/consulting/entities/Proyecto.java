@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="proyectos")
+@Table(name="proyectos", schema="mym_common")
 @NamedQuery(name="Proyecto.findAll", query="SELECT p FROM Proyecto p")
 public class Proyecto {
     @Id

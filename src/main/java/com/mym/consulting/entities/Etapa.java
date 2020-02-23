@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="etapas")
+@Table(name="etapas", schema="mym_common")
 @NamedQuery(name="Etapa.findAll", query="SELECT e FROM Etapa e")
 public class Etapa {
     @Id
@@ -14,5 +14,4 @@ public class Etapa {
 
     private String nombre;
 
-    private Integer peso;
 }

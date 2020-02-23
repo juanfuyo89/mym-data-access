@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="equipos")
+@Table(name="equipos", schema="mym_common")
 @NamedQuery(name="Equipo.findAll", query="SELECT e FROM Equipo e")
 public class Equipo {
     @Id

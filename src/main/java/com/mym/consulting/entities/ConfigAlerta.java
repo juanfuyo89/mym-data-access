@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="config_alertas")
+@Table(name="config_alertas", schema="mym_common")
 @NamedQuery(name="ConfigAlerta.findAll", query="SELECT c FROM ConfigAlerta c")
 public class ConfigAlerta {
     @Id

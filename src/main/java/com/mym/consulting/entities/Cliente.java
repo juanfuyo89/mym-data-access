@@ -6,11 +6,11 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="clientes")
+@Table(name="clientes", schema="mym_common")
 @NamedQuery(name="Cliente.findAll", query="SELECT c FROM Cliente c")
 public class Cliente {
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
     private String contacto;

@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name="pagos")
+@Table(name="pagos", schema="mym_common")
 @NamedQuery(name="Pago.findAll", query="SELECT p FROM Pago p")
 public class Pago {
     @Id

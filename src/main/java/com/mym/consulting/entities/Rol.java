@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="roles")
+@Table(name="roles", schema="mym_common")
 @NamedQuery(name="Rol.findAll", query="SELECT r FROM Rol r")
 public class Rol {
     @Id

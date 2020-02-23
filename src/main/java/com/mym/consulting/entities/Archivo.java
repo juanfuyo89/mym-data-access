@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 
 @Data
 @Entity
-@Table(name="archivos")
+@Table(name="archivos", schema="mym_common")
 @NamedQuery(name="Archivo.findAll", query="SELECT a FROM Archivo a")
 public class Archivo {
     @Id

@@ -4,7 +4,7 @@ import lombok.Data;
 import javax.persistence.*;
 @Data
 @Entity
-@Table(name="ciudades")
+@Table(name="ciudades", schema="mym_common")
 @NamedQuery(name="Ciudad.findAll", query="SELECT c FROM Ciudad c")
 public class Ciudad {
     @Id
