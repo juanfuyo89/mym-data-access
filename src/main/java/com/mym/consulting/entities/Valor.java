@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Table(name="valor", schema="mym_common")
 @NamedQuery(name="Valor.findAll", query="SELECT v FROM Valor v")
 public class Valor {
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
@@ -16,4 +17,5 @@ public class Valor {
     private Integer idProyecto;
 
     private double total;
+
 }
