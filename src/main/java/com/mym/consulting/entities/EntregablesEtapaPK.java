@@ -19,4 +19,6 @@ public class EntregablesEtapaPK implements Serializable {
     @Column(name="id_proyecto")
     private Integer idProyecto;
 
+    private Integer peso;
+
 }

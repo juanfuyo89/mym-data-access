@@ -53,6 +53,8 @@ public class Proyecto {
     @Column(name="fin_suspension")
     private LocalDate finSuspension;
 
+    private Integer peso;
+
     private String status;
 
 }
