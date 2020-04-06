@@ -14,10 +14,12 @@ public class Proyecto {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="numero_contrato")
-    private String numeroContrato;
+    @ManyToOne(targetEntity = Contrato.class)
+    @JoinColumn(name="id_contrato")
+    private Contrato contrato;
 
-    private String nombre;
+    @Column(name="codigo_proyecto")
+    private String codigoProyecto;
 
     private String estado;
 
