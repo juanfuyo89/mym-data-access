@@ -14,4 +14,7 @@ import javax.persistence.Table;
 public class EntregablesEtapa {
     @EmbeddedId
     private EntregablesEtapaPK id;
+
+    private Integer peso;
+
 }

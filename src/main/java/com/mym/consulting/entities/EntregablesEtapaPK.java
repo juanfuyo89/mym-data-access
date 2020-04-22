@@ -19,6 +19,8 @@ public class EntregablesEtapaPK implements Serializable {
     @Column(name="id_proyecto")
     private Integer idProyecto;
 
-    private Integer peso;
-
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }
