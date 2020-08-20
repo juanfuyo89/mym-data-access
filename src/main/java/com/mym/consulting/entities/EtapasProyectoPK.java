@@ -12,7 +12,4 @@ public class EtapasProyectoPK implements Serializable {
 
     @Column(name="id_etapa")
     private Integer idEtapa;
-
-    @Column
-    private Integer peso;
 }

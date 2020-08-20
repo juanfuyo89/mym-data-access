@@ -2,10 +2,8 @@ package com.mym.consulting.entities;
 
 import lombok.Data;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.sql.Timestamp;
 
 @Data
 @Entity
@@ -14,7 +12,8 @@ import javax.persistence.Table;
 public class EntregablesEtapa {
     @EmbeddedId
     private EntregablesEtapaPK id;
-
+    @Column(name="id_archivo")
+    private Integer idArchivo;
     private Integer peso;
-
+    private String estado;
 }

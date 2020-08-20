@@ -11,4 +11,5 @@ import javax.persistence.*;
 public class EtapasProyecto {
     @EmbeddedId
     private EtapasProyectoPK id;
+    private Integer peso;
 }

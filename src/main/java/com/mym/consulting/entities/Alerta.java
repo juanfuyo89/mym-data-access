@@ -14,8 +14,7 @@ public class Alerta {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="id_config")
-    private Integer idConfig;
+    private String leida;
 
     private String mensaje;
 

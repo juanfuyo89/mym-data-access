@@ -13,8 +13,7 @@ public class Archivo {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name="id_etapa")
-    private Integer idEtapa;
+    private String name;
 
     private String path;
 
