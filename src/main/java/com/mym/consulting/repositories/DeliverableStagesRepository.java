@@ -15,8 +15,12 @@ import java.util.Optional;
 @Repository
 public interface DeliverableStagesRepository extends JpaRepository<EntregablesEtapa, Integer> {
 
-    @Query("SELECT e FROM EntregablesEtapa e WHERE e.id.idProyecto = :projectId ORDER BY e.id.idProyecto ASC")
+    @Query("SELECT e FROM EntregablesEtapa e WHERE e.id.idProyecto = :projectId ORDER BY e.fechaEntrega ASC")
     List<EntregablesEtapa> findByIdProject(@Param("projectId") Integer projectId);
+
+    @Query("SELECT e FROM EntregablesEtapa e WHERE e.id.idProyecto = :projectId AND e.estado = :status " +
+            "ORDER BY e.id.idEtapa, e.id.idEntregable ASC")
+    List<EntregablesEtapa> findByIdProjectEnd(@Param("projectId") Integer projectId, @Param("status") String status);
 
     @Query("SELECT e FROM EntregablesEtapa e WHERE e.id.idProyecto = :projectId AND e.id.idEtapa = :stageId " +
             "AND e.id.idEntregable = :deliverableId")
