@@ -11,7 +11,11 @@ import javax.persistence.*;
 public class Cliente {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
+
+    @Column(name = "client_id")
+    private String clientId;
 
     private String contacto;
 
